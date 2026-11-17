@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A fast, accessible, responsive web starter." />
+    <meta name="theme-color" content="#f6f7fb" />
+    <title>Northstar — Modern web starter</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./" aria-label="Northstar home">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>northstar</span>
+        </a>
+
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation menu">
+            <span class="menu-icon" aria-hidden="true">☰</span>
+          </summary>
+          <nav aria-label="Mobile navigation">
+            <a href="#principles">Principles</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#faq">FAQ</a>
+            <button class="button button-small button-quiet" type="button" data-theme-toggle aria-pressed="false">
+              <span data-theme-label>Dark mode</span>
+            </button>
+          </nav>
+        </details>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#principles">Principles</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#faq">FAQ</a>
+          <button class="button button-small button-quiet" type="button" data-theme-toggle aria-pressed="false">
+            <span data-theme-label>Dark mode</span>
+          </button>
+          <a class="button button-small button-primary" href="#start">Start building</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">A considered starting point</p>
+            <h1 id="hero-title">Build for the web people use every day.</h1>
+            <p class="hero-lede">
+              A calm, fast foundation for experiences that feel clear on every screen and work for every person.
+            </p>
+            <div class="hero-actions" id="start">
+              <a class="button button-primary" href="#workflow">Explore the approach <span aria-hidden="true">→</span></a>
+              <a class="button button-secondary" href="#principles">See the principles</a>
+            </div>
+            <p class="microcopy"><span class="status-dot" aria-hidden="true"></span> No framework or build step required.</p>
+          </div>
+
+          <div class="hero-art reveal" aria-label="A layered abstract illustration" role="img">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="art-card art-card-back"></div>
+            <div class="art-card art-card-front">
+              <div class="art-card-top"><span>northstar</span><span aria-hidden="true">↗</span></div>
+              <div class="art-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="art-chip">Ready for the next idea</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="principles" aria-labelledby="principles-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">The principles</p>
+            <h2 id="principles-title">Make the right thing easy to use.</h2>
+            <p>Good foundations disappear into the experience. They give every decision a clear purpose.</p>
+          </div>
+          <div class="principles-grid">
+            <article class="principle-card reveal">
+              <span class="card-number" aria-hidden="true">01</span>
+              <h3>Clarity first</h3>
+              <p>Use hierarchy, meaningful copy, and generous space so people always know where they are.</p>
+            </article>
+            <article class="principle-card reveal">
+              <span class="card-number" aria-hidden="true">02</span>
+              <h3>Progressive by default</h3>
+              <p>Start with native HTML, enhance when it earns its place, and keep the core experience resilient.</p>
+            </article>
+            <article class="principle-card reveal">
+              <span class="card-number" aria-hidden="true">03</span>
+              <h3>Kind to every device</h3>
+              <p>Responsive layouts, visible focus, reduced motion, and fast loading are product features.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workflow" aria-labelledby="workflow-title">
+        <div class="container split-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">A simple workflow</p>
+            <h2 id="workflow-title">A small system that can grow with you.</h2>
+            <p>Keep the first release focused. Every layer is intentionally easy to understand and extend.</p>
+            <a class="text-link" href="#faq">Read the common questions <span aria-hidden="true">↗</span></a>
+          </div>
+          <ol class="timeline" aria-label="Project workflow">
+            <li class="timeline-item reveal">
+              <span class="timeline-index">1</span>
+              <div><h3>Shape the intent</h3><p>Define the audience, the promise, and the one action that matters most.</p></div>
+            </li>
+            <li class="timeline-item reveal">
+              <span class="timeline-index">2</span>
+              <div><h3>Build the foundation</h3><p>Start semantic, responsive, and accessible before adding visual detail.</p></div>
+            </li>
+            <li class="timeline-item reveal">
+              <span class="timeline-index">3</span>
+              <div><h3>Test the experience</h3><p>Try it with a keyboard, a narrow screen, reduced motion, and a slow connection.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section-accent" id="faq" aria-labelledby="faq-title">
+        <div class="container faq-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title">Start small. Stay intentional.</h2>
+          </div>
+          <div class="faq-list reveal">
+            <details name="faq">
+              <summary>Does this need a framework?</summary>
+              <p>No. The starter is intentionally built with platform features so it can be opened directly in a browser.</p>
+            </details>
+            <details name="faq">
+              <summary>Is the layout responsive?</summary>
+              <p>Yes. The layout uses fluid type, flexible grids, and mobile-first breakpoints without fixed-height content areas.</p>
+            </details>
+            <details name="faq">
+              <summary>What should I change first?</summary>
+              <p>Replace the content and design tokens in <code>styles.css</code>, then keep the semantic structure and interaction patterns.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-current-year></span> Northstar.</p>
+        <p>Made for the open web.</p>
+      </div>
+    </footer>
+
+    <p class="visually-hidden" data-status aria-live="polite"></p>
+  </body>
+</html>
